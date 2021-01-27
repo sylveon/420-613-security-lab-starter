@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "NotFound";
+}
+
+<h2>NotFound</h2>
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorUrl))
+{
+    @Html.Encode($"{ViewBag.ErrorUrl} is not a known URL");
+}
+
+<a href="/">Return to home</a>

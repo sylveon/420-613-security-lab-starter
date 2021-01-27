@@ -26,5 +26,10 @@ namespace SecurityLab1_Starter.Controllers
 
             return View();
         }
+
+        public ActionResult Exception()
+        {
+            throw new Exception("web page machine broke");
+        }
     }
 }
